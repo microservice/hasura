@@ -1,0 +1,21 @@
+omg: 1
+lifecycle:
+  startup:
+    command: ["/bin/graphql-engine", "serve"]
+
+expose:
+  console:
+    http:
+      path: /console
+      port: 8080
+
+environment:
+  HASURA_GRAPHQL_ENABLE_CONSOLE:
+    help: Whether to enable the built in console or not
+    type: boolean
+    required: true
+    default: true
+  HASURA_GRAPHQL_DATABASE_URL:
+    help: The URL to your postgres database, such as postgres://user:password@host/database_name
+    type: string
+    required: true
