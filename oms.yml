@@ -1,9 +1,18 @@
-omg: 1
+oms: 1
+
+info:
+  version: 1.0.0
+  title: Hasura
+  description: Instant realtime GraphQL on Postgres
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+
 lifecycle:
   startup:
-    command: ["/bin/graphql-engine", "serve"]
+    command: ['/bin/graphql-engine', 'serve']
 
-expose:
+forwards:
   console:
     http:
       path: /console
@@ -21,7 +30,6 @@ environment:
   HASURA_GRAPHQL_ENABLE_CONSOLE:
     help: Whether to enable the built in console or not
     type: boolean
-    required: true
     default: true
   HASURA_GRAPHQL_DATABASE_URL:
     help: The URL to your postgres database, such as postgres://user:password@host/database_name
