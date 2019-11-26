@@ -28,13 +28,6 @@ See the [oms-cli](https://github.com/microservices/oms) project to learn more!
 npm install -g @microservices/oms
 ```
 
-## Usage
-
-### Open Microservices CLI Usage
-
-Once you have the [oms-cli](https://github.com/microservices/oms) installed, you can run any of the following commands from
-within this project's root directory:
-
 ## Contributing
 
 All suggestions in how to improve the specification and this guide are very welcome. Feel free share your thoughts in the
