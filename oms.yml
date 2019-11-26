@@ -28,10 +28,10 @@ forwards:
 
 environment:
   HASURA_GRAPHQL_ENABLE_CONSOLE:
-    help: Whether to enable the built in console or not
+    help: Whether to enable the built in console
     type: boolean
     default: true
   HASURA_GRAPHQL_DATABASE_URL:
-    help: The URL to your postgres database, such as postgres://user:password@host/database_name
+    help: The URL to your Postgres database, such as postgres://user:password@host/database_name
     type: string
     required: true
